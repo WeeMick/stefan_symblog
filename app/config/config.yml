@@ -83,3 +83,12 @@ assetic:
     use_controller: '%kernel.debug%'
     filters:
         cssrewrite: ~
+
+#FOS User Bundle
+fos_user:
+    db_driver: orm # other valid values are 'mongodb' and 'couchdb'
+    firewall_name: main
+    user_class: Blogger\BlogBundle\Entity\User
+    from_email:
+        address: "m.blair2@edu.salford.ac.uk"
+        sender_name: "Mickey Mail Server"
