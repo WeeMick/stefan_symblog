@@ -1,0 +1,13 @@
+blogger_blog_hello:
+    path:     /hello/{name}
+    defaults: { _controller: BloggerBlogBundle:Default:index, name: john }
+
+blogger_blog_index:
+    path:     /
+    defaults: { _controller: BloggerBlogBundle:Page:index }
+
+blogger_about:
+    path:  /about
+    defaults: { _controller: BloggerBlogBundle:Page:about }
+    requirements:
+        _method:  GET
